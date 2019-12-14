@@ -7,7 +7,7 @@
 #==========================================================================
 
 #check if vboxdrv is loaded
-/root/3TDroid/scripts/check_vboxdrv.sh
+/root/docker-android-vm/scripts/check_vboxdrv.sh
 
 
 MACHINE_NAME=$1
