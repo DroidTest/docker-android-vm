@@ -29,7 +29,7 @@ function connect_adb {
 
 
 #set up vm
-/root/3TDroid/scripts/setup_vm.sh $VM $ADB_PORT
+/root/docker-android-vm/scripts/setup_vm.sh $VM $ADB_PORT
 
 #launch vm
 vboxmanage startvm $VM --type $MODEL
