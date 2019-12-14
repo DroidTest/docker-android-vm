@@ -22,6 +22,15 @@ The framework runs on Ubuntu 16.04 with docker installed.
 * docker build -t droidtest/android7-vm . 
 
 ### Usage ###
+ * launch a vm with GUI (default adb port: 6666) 
+ 
+```
+docker run -it --privileged -e DISPLAY=$DISPLAY --net=host -v $HOME/.Xauthority:/root/.Xauthority:rw -v /dev:/dev droidtest/android7-vm  /root/docker-android-vm/scripts/launch_vm.sh Android_7 6666 gui
+```
 
-docker run -it --rm --privileged -e DISPLAY=$DISPLAY --net=host -v $HOME/.Xauthority:/root/.Xauthority:rw -v /dev:/dev -v /home/dz/Android_7_Exper/batch2/Fox_News.apk:/root/aut.apk:ro zhendong/3tdroid  /root/3TDroid/scripts/run_monkey.sh Android_7 6666 gui 100 50
+* launch a vm with headless 
+```
+docker run -it --privileged -v /dev:/dev droidtest/android7-vm  /root/docker-android-vm/scripts/launch_vm.sh Android_7 6666 headless
+```
+
 
