@@ -37,6 +37,10 @@ docker run -it --privileged -v /dev:/dev droidtest/android7-vm  /root/docker-and
 ```
 docker run -it --rm --privileged -e DISPLAY=$DISPLAY --net=host -v $HOME/.Xauthority:/root/.Xauthority:rw -v /dev:/dev -v $APK:/root/aut.apk:ro droidtest/android7-vm  /root/docker-android-vm/scripts/run_monkey.sh Android_7 6666 gui 100 100
 ```
+* Save and restore a state after launching a vm
 
+```
+
+```
 
 
