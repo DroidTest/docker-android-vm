@@ -16,6 +16,6 @@ ENV PYTHONPATH=/usr/lib/virtualbox/sdk/bindings/xpcom/python
 RUN cd vbox_sdk/installer && python vboxapisetup.py install
 
 # clone the project
-RUN git clone https://github.com/zhendong2050/3TDroid.git
+RUN git clone https://github.com/DroidTest/docker-android-vm.git
 
 
