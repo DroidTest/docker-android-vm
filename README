@@ -1,0 +1,5 @@
+docker build -t zhendong/3tdroid .
+
+
+docker run -it --rm --privileged -e DISPLAY=$DISPLAY --net=host -v $HOME/.Xauthority:/root/.Xauthority:rw -v /dev:/dev -v /home/dz/Android_7_Exper/batch2/Fox_News.apk:/root/aut.apk:ro zhendong/3tdroid  /root/3TDroid/scripts/run_monkey.sh Android_7 6666 gui 100 50
+
